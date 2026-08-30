@@ -41,6 +41,14 @@ export default function NotePreviewClient({ id }: NotePreviewClientProps) {
           <p className={css.tag}>{note?.tag}</p>
           <p className={css.content}>{note?.content}</p>
           <p className={css.date}>{note?.createdAt}</p>
+          <button
+            type="button"
+            onClick={handleClose}
+            className={css.backBtn}
+            aria-label="Close modal"
+          >
+            Close
+          </button>
         </div>
       </div>
     </Modal>
